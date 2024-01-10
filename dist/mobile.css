@@ -40,7 +40,6 @@
   .link {
     margin: 20px 0;
     /* flex-direction: column; */
-    align-items: start;
   }
 
   .navLinks.active {
