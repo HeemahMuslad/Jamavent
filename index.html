@@ -6,14 +6,185 @@
     <title>JAMAVENT</title>
     <link rel="stylesheet" href="./dist/style.css" />
     <link rel="stylesheet" href="./dist/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <script src="./dist/script.js" defer></script>
   </head>
   <body>
     <header class="w-full">
       <div
-        class="flex my-10 items-center w-divWidth mx-auto md:justify-between"
+        class="menu-bar flex my-10 items-center w-divWidth mx-auto justify-between"
       >
-        <div class="flex gap-2 items-center w-small">
+        <img src="./images/logo.png" alt="" />
+        <div
+          class="hamburger hidden w-auto p-1 border-2 ml-4 border-black/3 border-solid rounded"
+        >
+          <span
+            class="bar block bg-primary w-barWidth my-1 mx-auto h-barHeight"
+          ></span>
+          <span
+            class="bar block bg-primary w-barWidth my-1 mx-auto h-barHeight"
+          ></span>
+          <span
+            class="bar block bg-primary w-barWidth my-1 mx-auto h-barHeight"
+          ></span>
+        </div>
+        <ul
+          class="navLinks hidden flex flex-col items-start w-internet sm:w-divWidth"
+        >
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Dashboard</a>
+          </li>
+          <li
+            class="link js-dropdown flex flex-col items-start relative hover:bg-primary"
+          >
+            <div class="flex gap-2 items-center">
+              <img src="./images/acc-upgrade.png" alt="" /><a href="#"
+                >My Transactions
+                <i
+                  class="fa-solid fa-caret-down text-primary absolute right-0 mr-2"
+                ></i>
+              </a>
+            </div>
+            <div class="dropdown js-dropdown-link hidden p-5">
+              <ul class="block">
+                <a href=""
+                  ><li class="cursor-pointer mb-3 hover:bg-white">
+                    ... Order Summary
+                  </li></a
+                >
+                <a href=""
+                  ><li class="cursor-pointer mb-3 hover:bg-white">
+                    ... Data Card History
+                  </li></a
+                >
+                <a href=""
+                  ><li class="cursor-pointer mb-3 hover:bg-white">
+                    ... Recharge Card History
+                  </li></a
+                >
+                <a href=""
+                  ><li class="cursor-pointer mb-3 hover:bg-white">
+                    ... Wallet History
+                  </li></a
+                >
+              </ul>
+            </div>
+          </li>
+          <li
+            class="link js-dropdown2 flex-col flex items-start relative hover:bg-primary"
+          >
+            <div class="flex gap-2 items-center">
+              <img src="./images/acc-upgrade.png" alt="" /><a href="#"
+                >Add Money To Wallet
+                <i
+                  class="fa-solid fa-caret-down text-primary absolute right-0 mr-2"
+                ></i>
+              </a>
+            </div>
+            <div class="dropdown js-dropdown-link-2 hidden p-5">
+              <ul class="block">
+                <a href="#">
+                  <li class="cursor-pointer mb-3 hover:bg-white">
+                    ... With ATM Card (ATM)
+                  </li></a
+                >
+                <a href=""
+                  ><li class="cursor-pointer mb-3 hover:bg-white">
+                    ... Bank-Deposit/Transfer
+                  </li></a
+                >
+                <a href=""
+                  ><li class="cursor-pointer mb-3 hover:bg-white">
+                    ... Coupon Code Funding
+                  </li></a
+                >
+                <a href=""
+                  ><li class="cursor-pointer mb-3 hover:bg-white">
+                    ... Auto Wallet Funding
+                  </li></a
+                >
+              </ul>
+            </div>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Sales Analysis</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Buy Airtime VTU</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Buy Share And Sell</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Account Pricing</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Buy Data Bundle </a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Data Card Printing</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Recharge Card Printing</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Reseller Bundle</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Buy CableTv Sub(s)</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Exchange Airtime </a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Buy Electric Token</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Buy Exams Pin</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Send Bulk SMS</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Reset Pin</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Change Password</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Developer API</a>
+          </li>
+          <li class="link flex gap-2 hover:bg-primary">
+            <img src="./images/acc-upgrade.png" alt="" />
+            <a href="#">Log Out</a>
+          </li>
+        </ul>
+
+        <!-- <div class="flex gap-2 items-center w-small">
           <img src="./images/user.png" alt="" />
           <div class="flex flex-col gap-1">
             <p class="font-bold">Welcome &#128075;, Qasim</p>
@@ -38,20 +209,7 @@
               <p>Fund Wallet</p>
             </div>
           </div>
-        </div>
-        <div
-          class="hamburger hidden w-auto p-1 border-2 ml-4 border-black/3 border-solid rounded"
-        >
-          <span
-            class="bar block bg-primary w-barWidth my-1 mx-auto h-barHeight"
-          ></span>
-          <span
-            class="bar block bg-primary w-barWidth my-1 mx-auto h-barHeight"
-          ></span>
-          <span
-            class="bar block bg-primary w-barWidth my-1 mx-auto h-barHeight"
-          ></span>
-        </div>
+        </div> -->
       </div>
     </header>
     <main class="main">
@@ -95,15 +253,15 @@
           >
             <div class="flex flex-col gap-3 items-center">
               <img src="./images/Facebook.png" alt="" />
-              <p class="text-xs">Facebook</p>
+              <a href="#" class="text-xs cursor-pointer">Facebook</a>
             </div>
             <div class="flex flex-col gap-3 items-center">
               <img src="./images/WhatsApp.png" alt="" />
-              <p class="text-xs">WhatsApp</p>
+              <a href="#" class="text-xs cursor-pointer">WhatsApp</a>
             </div>
             <div class="flex flex-col gap-3 items-center">
               <img src="./images/Twitter.png" alt="" />
-              <p class="text-xs">Twitter</p>
+              <a href="#" class="text-xs cursor-pointer">Twitter</a>
             </div>
           </div>
         </div>
@@ -116,11 +274,12 @@
               src="./google-play.png"
               alt=""
             />
-            <p
+            <a
               class="px-5 py-3 border text-center sm:w-full border-primary hover:border-white rounded cursor-pointer"
+              href="#"
             >
               Get Your Website
-            </p>
+            </a>
           </div>
         </div>
       </section>
@@ -138,11 +297,11 @@
                 class="flex flex-col gap-3 items-center md:border-b md:border-primary md:pb-1"
               >
                 <img src="./images/global-refresh-1.png" alt="" />
-                <p class="text-xs">Buy Data</p>
+                <a class="text-xs" href="">Buy Data</a>
               </div>
               <div class="flex flex-col gap-3 items-center">
                 <img src="./images/withdraw.png" alt="" />
-                <p class="text-xs">Withdraw</p>
+                <a class="text-xs" href="">Withdraw</a>
               </div>
             </div>
             <div
@@ -152,11 +311,11 @@
                 class="flex flex-col gap-3 items-center md:border-b md:border-primary md:pb-1"
               >
                 <img src="./images/pay-bills.png" alt="" />
-                <p class="text-xs">Pay Bills</p>
+                <a class="text-xs" href="">Pay Bills</a>
               </div>
               <div class="flex flex-col gap-3 items-center">
                 <img src="./images/deposit.png" alt="" />
-                <p class="text-xs">Deposit</p>
+                <a class="text-xs" href="">Deposit</a>
               </div>
             </div>
             <div
@@ -166,11 +325,11 @@
                 class="flex flex-col gap-3 items-center md:border-b md:border-primary md:pb-1"
               >
                 <img src="./images/airtime.png" alt="" />
-                <p class="text-xs">Buy Airtime</p>
+                <a class="text-xs" href="">Buy Airtime</a>
               </div>
               <div class="flex flex-col gap-3 items-center">
                 <img src="./images/website.png" alt="" />
-                <p class="text-xs">Get Your Website</p>
+                <a class="text-xs" href="">Get Your Website</a>
               </div>
             </div>
             <div
@@ -180,11 +339,11 @@
                 class="flex flex-col gap-3 items-center md:border-b md:border-primary md:pb-1"
               >
                 <img src="./images/global-refresh-1.png" alt="" />
-                <p class="text-xs">Exam Cards pin</p>
+                <a class="text-xs" href="">Exam Cards pin</a>
               </div>
               <div class="flex flex-col gap-3 items-center">
                 <img src="./images/history.png" alt="" />
-                <p class="text-xs">History</p>
+                <a class="text-xs" href="">History</a>
               </div>
             </div>
             <div
@@ -194,11 +353,11 @@
                 class="flex flex-col gap-3 items-center md:border-b md:border-primary md:pb-1"
               >
                 <img src="./images/global-refresh-1.png" alt="" />
-                <p class="text-xs">Data Card Printing</p>
+                <a class="text-xs" href="">Data Card Printing</a>
               </div>
               <div class="flex flex-col gap-3 items-center">
                 <img src="./images/acc-upgrade.png" alt="" />
-                <p class="text-xs">Account Upgrading</p>
+                <a class="text-xs" href="">Account Upgrading</a>
               </div>
             </div>
             <div
@@ -208,11 +367,11 @@
                 class="flex flex-col gap-3 items-center md:border-b md:border-primary md:pb-1"
               >
                 <img src="./images/global-refresh-1.png" alt="" />
-                <p class="text-xs">Recharge Card Printing</p>
+                <a class="text-xs" href="">Recharge Card Printing</a>
               </div>
               <div class="flex flex-col gap-3 items-center">
                 <img src="./images/referral.png" alt="" />
-                <p class="text-xs">Referral Bonus</p>
+                <a class="text-xs" href="">Referral Bonus</a>
               </div>
             </div>
           </div>
@@ -257,12 +416,12 @@
             <div
               class="inline-block flex items-center justify-center w-full cursor-pointer px-5 py-3 border border-primary rounded text-black shadow-md hover:bg-primary hover:border-none hover:text-white"
             >
-              Activate Now
+              <a href="#">Activate Now</a>
             </div>
             <div
               class="inline-block flex items-center justify-center w-full cursor-pointer px-5 py-3 bg-primary rounded text-white shadow-md hover:border hover:border-primary hover:bg-transparent hover:text-black"
             >
-              Join WhatsApp Group
+              <a href="#">Join WhatsApp Group</a>
             </div>
           </div>
         </div>
@@ -287,7 +446,7 @@
             <div
               class="inline-block flex w-box2 md:w-full justify-center py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary hover:border-white cursor-pointer"
             >
-              <p>Submit</p>
+              <a href="#">Submit</a>
             </div>
           </div>
         </div>
