@@ -1,5 +1,6 @@
 * {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 .activated {
   display: block;
@@ -43,9 +44,7 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 /* navbar */
-body {
-  overflow-x: hidden !important;
-}
+
 .navLinks {
   display: block;
   position: absolute;
