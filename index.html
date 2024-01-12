@@ -13,6 +13,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="./dist/script.js" defer></script>
   </head>
@@ -42,9 +50,7 @@
             <img src="./images/acc-upgrade.png" alt="" />
             <a href="#">Dashboard</a>
           </li>
-          <li
-            class="link js-dropdown flex flex-col items-start relative hover:bg-primary"
-          >
+          <li class="link js-dropdown flex flex-col items-start relative">
             <div class="flex gap-2 items-center">
               <img src="./images/acc-upgrade.png" alt="" /><a href="#"
                 >My Transactions
@@ -78,9 +84,7 @@
               </ul>
             </div>
           </li>
-          <li
-            class="link js-dropdown2 flex-col flex items-start relative hover:bg-primary"
-          >
+          <li class="link js-dropdown2 flex-col flex items-start relative">
             <div class="flex gap-2 items-center">
               <img src="./images/acc-upgrade.png" alt="" /><a href="#"
                 >Add Money To Wallet
@@ -188,7 +192,7 @@
     <main class="main">
       <section>
         <div
-          class="user flex items-center md:flex-col md:items-start my-10 w-divWidth justify-between mx-auto"
+          class="user flex items-center my-10 w-divWidth justify-between mx-auto"
         >
           <div class="flex gap-2 items-center">
             <img src="./images/user.png" alt="" />
@@ -206,21 +210,24 @@
             </div>
           </div>
 
-          <div class="flex gap-3 items-center">
-            <img src="./images/bell.png" alt="" />
-            <div
-              class="inline-block flex px-5 py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary hover:border-white cursor-pointer"
-            >
-              <img src="./images/wallet-add.png" alt="" />
-              <p>Fund Wallet</p>
-            </div>
+          <div
+            class="inline-block flex px-5 py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary hover:border hover:border-primary hover:bg-transparent hover:text-black cursor-pointer"
+          >
+            <img src="./images/wallet-add.png" alt="" />
+            <a href="#">Fund Wallet</a>
+          </div>
+          <div
+            class="inline-block flex px-5 py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary hover:border hover:border-primary hover:bg-transparent hover:text-black cursor-pointer"
+          >
+            <img src="./images/wallet-add.png" alt="" />
+            <a href="#">Fund DataBucket</a>
           </div>
         </div>
         <div
           class="section1 flex my-10 items-center lg:grid lg:grid-cols-2 w-divWidth gap-2 mx-auto"
         >
           <div
-            class="inline-block h-20 w-box1 lg:w-full flex justify-between px-5 py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary hover:border-white cursor-pointer"
+            class="inline-block h-20 w-box1 lg:w-full flex justify-between px-5 py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary hover:border hover:border-primary hover:bg-transparent hover:text-black cursor-pointer"
           >
             <div class="flex flex-col">
               <p>Wallet Balance</p>
@@ -233,7 +240,7 @@
             </div>
           </div>
           <div
-            class="inline-block h-20 justify-between w-box1 lg:w-full flex px-5 py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary hover:border-white cursor-pointer"
+            class="inline-block h-20 justify-between w-box1 lg:w-full flex px-5 py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary hover:border hover:border-primary hover:bg-transparent hover:text-black cursor-pointer"
           >
             <div class="flex flex-col">
               <p>Total Transaction</p>
@@ -251,20 +258,9 @@
             <img src="./images/internet.png" alt="" />
           </div>
           <div
-            class="flex h-20 w-box2 lg:w-full items-center justify-center lg:justify-between px-5 py-3 gap-2 text-white border border-primary rounded shadow-md bg-primary"
+            class="inline-block flex h-20 w-box2 lg:w-full items-center justify-center cursor-pointer px-5 py-3 bg-primary rounded text-white shadow-md hover:border hover:border-primary hover:bg-transparent hover:text-black"
           >
-            <div class="flex flex-col gap-3 items-center">
-              <img src="./images/Facebook.png" alt="" />
-              <a href="#" class="text-xs cursor-pointer">Facebook</a>
-            </div>
-            <div class="flex flex-col gap-3 items-center">
-              <img src="./images/WhatsApp.png" alt="" />
-              <a href="#" class="text-xs cursor-pointer">WhatsApp</a>
-            </div>
-            <div class="flex flex-col gap-3 items-center">
-              <img src="./images/Twitter.png" alt="" />
-              <a href="#" class="text-xs cursor-pointer">Twitter</a>
-            </div>
+            <a href="#">Join WhatsApp Group</a>
           </div>
         </div>
         <div class="flex w-divWidth mx-auto">
@@ -388,7 +384,7 @@
           >
             <p>Your Referral Link:</p>
             <div
-              class="inline-block flex items-center sm:flex-col-reverse justify-center gap-2 px-5 py-3 border border-primary rounded text-black shadow-md cursor-pointer"
+              class="inline-block flex items-center sm:flex-col-reverse justify-center gap-2 py-3 border border-primary rounded text-black shadow-md cursor-pointer"
             >
               <p class="text-center">
                 https://jamavant.ng/web/newAccount?referral=admin
@@ -420,11 +416,6 @@
             >
               <a href="#">Activate Now</a>
             </div>
-            <div
-              class="inline-block flex items-center justify-center w-full cursor-pointer px-5 py-3 bg-primary rounded text-white shadow-md hover:border hover:border-primary hover:bg-transparent hover:text-black"
-            >
-              <a href="#">Join WhatsApp Group</a>
-            </div>
           </div>
         </div>
       </section>
@@ -442,7 +433,7 @@
               name="message"
               id=""
               cols="30"
-              rows="10"
+              rows="5"
               placeholder="Write Message..."
             ></textarea>
             <div
