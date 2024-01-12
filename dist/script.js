@@ -16,6 +16,7 @@ document.querySelector(".main").addEventListener("click", () => {
   hamburger.classList.remove("active");
   navlink.classList.remove("active");
 });
+
 document.querySelectorAll(".js-dropdown").forEach((dropdown) =>
   dropdown.addEventListener("click", () => {
     dropdownLink.classList.toggle("activated");
